@@ -5,6 +5,8 @@ public class PowerOfTwo {
     public static void main(String[] args) {
         boolean n = isPowerOfTwo(16);
         System.out.println(n);
+        System.out.println(isPowerOfThree(33));
+        System.out.println(isPowerOfFour(28));
     }
 
     public static boolean isPowerOfTwo(long n){
