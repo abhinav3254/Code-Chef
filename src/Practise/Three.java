@@ -34,7 +34,7 @@ public class Three<T> {
         three.printData();
     }
 
-    class Node<T> {
+    static class Node<T> {
         T data;
         Node<T> next;
 
