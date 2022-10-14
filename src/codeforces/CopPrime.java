@@ -1,6 +1,8 @@
 package codeforces;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class CopPrime {
     static int __gcd(int a, int b)
@@ -28,16 +30,18 @@ public class CopPrime {
     }
     static int finalAnswer = -1;
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] strNums;
 
+//        int t = sc.nextInt();
+        int t = Integer.parseInt(br.readLine());
         while (t-->0) {
-            int n = sc.nextInt();
+            int n = Integer.parseInt(br.readLine());
             int[] arr = new int[n];
-
+            strNums = br.readLine().split(" ");
             for (int i = 0; i < n; i++) {
-                arr[i] = sc.nextInt();
+                arr[i] = Integer.parseInt(strNums[i]);
             }
             for (int i = 0; i < n; i++) {
                 for (int j = i; j < n; j++) {
